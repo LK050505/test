@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/*
+ * 页面主样式
+ * 日期: 2021-05-18
+ * By LK
+ * 代码如诗
+ * 
+*/
+/*** 引用 ***/
+/*** 常用工具包 ***/
+/*
+ * 包含常用工具以及浏览器兼容性
+ */
+.header {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 999; }
+
+.nav {
+  height: 70px;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav ul {
+    display: flex; }
+    .nav ul li {
+      margin-left: 60px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px; }
+    .nav ul li:hover {
+      border-bottom: 2px solid #e71b27; }
+
+.top_banner {
+  padding-top: 70px; }
+  .top_banner .swiper-pagination {
+    width: auto;
+    display: flex;
+    align-items: center;
+    position: inherit; }
+  .top_banner .b_page {
+    position: absolute;
+    bottom: 4vw;
+    width: 200px;
+    left: 50%;
+    margin-left: -600px;
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    align-items: center; }
+  .top_banner .swiper-button-next, .top_banner .swiper-button-prev {
+    position: inherit !important; }
+  .top_banner .swiper-button-next::after, .top_banner .swiper-button-prev::after {
+    font-size: 14px;
+    color: #C4C4C4; }
+  .top_banner .swiper-pagination-clickable .swiper-pagination-bullet {
+    margin: 0 7px; }
+  .top_banner .swiper-pagination-bullet-active {
+    background: #E72900;
+    width: 20px;
+    border-radius: 5px; }
+
+.part01 {
+  display: flex;
+  align-items: center; }
+  .part01 .le_pic {
+    width: 48.177vw;
+    margin-right: 8vw; }
+  .part01 dl img {
+    width: 36.458vw; }
+  .part01 dl a {
+    background: linear-gradient(270deg, #E9863E 26.56%, #E86749 78.65%);
+    border-radius: 4px;
+    width: 173px;
+    height: 50px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    margin-top: 20px; }
+
+.part02 {
+  text-align: center; }
+  .part02 h1 {
+    font-size: 32px; }
+  .part02 h2 {
+    font-size: 24px;
+    color: #9B9B9B;
+    padding-top: 10px; }
+  .part02 .main-img {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 617px;
+    overflow: hidden !important; }
+  .part02 .in_boy {
+    border-radius: 10px;
+    width: 15vw;
+    height: 617px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-flow: column; }
+    .part02 .in_boy img {
+      width: 400px; }
+    .part02 .in_boy h1 {
+      font-weight: bold;
+      font-size: 1.67vw; }
+    .part02 .in_boy h3 {
+      font-weight: bold;
+      font-size: 0.9375vw; }
+    .part02 .in_boy h4 {
+      padding-top: 40px; }
+      .part02 .in_boy h4 a {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        width: 244px;
+        height: 60px;
+        font-size: 0.9375vw;
+        color: #000;
+        text-align: center;
+        display: inline-block;
+        line-height: 60px;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        margin-left: -122px; }
+  .part02 .swiper-slide {
+    width: 15vw;
+    opacity: 0.3; }
+    .part02 .swiper-slide .in_boy h1 {
+      color: #000; }
+    .part02 .swiper-slide .in_boy h4 {
+      display: none; }
+  .part02 .swiper-slide-active {
+    opacity: 1; }
+    .part02 .swiper-slide-active img {
+      width: 450px; }
+    .part02 .swiper-slide-active .in_boy h1 {
+      color: #fff; }
+    .part02 .swiper-slide-active .in_boy h4 {
+      display: block; }
+  .part02 .main-img:after {
+    background: #FF6B00;
+    width: 300px;
+    height: 617px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -150px;
+    z-index: -1; }
+  .part02 .swiper-button-next {
+    right: 25vw;
+    bottom: 20px;
+    top: inherit;
+    background: #fff;
+    height: 100px; }
+    .part02 .swiper-button-next img {
+      height: 60px; }
+  .part02 .swiper-button-prev {
+    left: 25vw;
+    bottom: 20px;
+    top: inherit;
+    background: #fff;
+    height: 100px; }
+    .part02 .swiper-button-prev img {
+      height: 60px; }
+  .part02 .swiper-button-next::after, .part02 .swiper-container-rtl .swiper-button-prev::after {
+    display: none; }
+
+.part03 {
+  text-align: center;
+  padding-top: 200px; }
+  .part03 h1 {
+    font-size: 32px; }
+  .part03 h2 {
+    font-size: 24px;
+    color: #9B9B9B;
+    padding-top: 10px; }
+  .part03 .swiper-scrollbar-drag {
+    background: #FF6B00; }
+  .part03 .main-img02 {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden !important; }
+  .part03 .swiper-slide {
+    width: 395px;
+    text-align: left;
+    height: 450px; }
+    .part03 .swiper-slide h5 {
+      font-size: 18px;
+      color: #555555;
+      padding: 10px; }
+    .part03 .swiper-slide h6 {
+      font-size: 14px;
+      color: #C7C7C7;
+      padding: 10px; }
+    .part03 .swiper-slide img {
+      width: 395px;
+      height: 260px; }
+
+.footer {
+  text-align: center;
+  background: #FAFAFA;
+  line-height: 90px; }
+  .footer span {
+    margin: 0 20px;
+    color: #AAAAAA; }
+
+.footer02 {
+  text-align: center;
+  background: #414141;
+  line-height: 90px;
+  color: #fff; }
+
+.op_icon {
+  width: 157px;
+  position: fixed;
+  right: -20px;
+  top: 50%;
+  margin-top: -190px;
+  display: flex;
+  align-items: center;
+  display: none;
+  z-index: 999; }
+  .op_icon span {
+    position: relative; }
+    .op_icon span img {
+      width: 100px; }
+    .op_icon span b {
+      width: 100px;
+      height: 30px;
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      bottom: 22px;
+      z-index: 9;
+      right: 0; }
+  .op_icon a img {
+    width: 37px; }
+
+.op_os {
+  width: 37px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -54px;
+  z-index: 999; }
+  .op_os a img {
+    width: 37px; }
+
+/*** 公共 ***/
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,STHeitiSC-Light,simsun,\\5B8B\4F53,WenQuanYi Zen Hei,WenQuanYi Micro Hei,"sans-serif";
+  font-size: 14px;
+  background: #fff;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer; }
+
+ul, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: normal; }
+
+/*# sourceMappingURL=style.css.map */

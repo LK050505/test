@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*** 常用工具包 ***/
+
+
+/*
+ * 包含常用工具以及浏览器兼容性
+ */
+
+//display:flex
+@mixin flex() {
+    display: -webkit-box;
+    /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box;
+    /* Firefox 17- */
+    display: -webkit-flex;
+    /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex;
+    /* Firefox 18+ */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}
+
+//space-between
+@mixin space-between() {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -moz-box-pack: space-between;
+    -webkit--moz-box-pack: space-between;
+    box-pack: space-between;
+}
+
+//align-items
+@mixin align-items() {
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+//justify-center
+@mixin justify-center() {
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit--moz-box-pack: center;
+    box-pack: center;
+}
+
+//justify-center
+@mixin flex-column() {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -moz-box-pack: column;
+    -webkit--moz-box-pack: column;
+    box-pack: column;
+}
+
+//space-around
+@mixin space-around() {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -moz-box-pack: space-around;
+    -webkit--moz-box-pack: space-around;
+    box-pack: space-around;
+}
+
+//space-around
+@mixin flex-wrap() {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-box-pack: wrap;
+    -webkit--moz-box-pack: wrap;
+    box-pack: wrap;
+}
+
+//flex-direction
+@mixin column-reverse() {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -webkit--moz-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
